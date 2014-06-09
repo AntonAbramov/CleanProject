@@ -27,6 +27,7 @@ var tabs = function () {
 	var tab = $(".tabs");
 	if (tab.length) {
 		tab.each(function () {
+			
 			var idx = $(this).find(".tab-nav .active").index();
 			$(this).find('.tab-content .tab').hide().eq(idx).show();
 		});
