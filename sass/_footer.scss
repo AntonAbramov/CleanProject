@@ -1,0 +1,31 @@
+.footer {
+	padding-top:25px;
+	padding-bottom:25px;
+	background:#f6f6f6;
+	font-size: 18px;
+	a {
+		text-decoration: none;
+		color:#3a383a;
+		margin-bottom: 5px;
+		&:hover, &:focus {
+			color:#3a383a;
+		}
+	}
+	.inn {
+		@extend .cf;
+		width:960px;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin:0 auto;
+	}
+	.copyright {
+		text-align: center;
+	}
+	.contacts {
+		float:left;
+	}
+	.office-contacts {
+		float:right;
+		text-align: right;
+	}
+}

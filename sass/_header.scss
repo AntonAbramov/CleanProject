@@ -1,0 +1,88 @@
+.header {
+	padding-top:40px;
+	padding-bottom:50px;
+	position:relative;
+	width:960px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin:0 auto;
+	a {
+		text-decoration: none;
+	}
+	.logo {
+		display: block;
+		position: absolute;
+		top:40px;
+		left:20px;
+		font-weight: bold;
+		color:#3a383a;
+		z-index: 2;
+		font-size: 18px;
+		text-transform: uppercase;
+		img {
+			display: block;
+			margin-bottom: 12px;
+		}
+	}
+	.contacts {
+		position: absolute;
+		z-index: 2;
+		text-align: right;
+		right:20px;
+		top:40px;
+		width:300px;
+		.tel {
+			font-size: 26px;
+			line-height: 26px;
+			margin:0 0 11px;
+			a {
+				color:#3a383a;
+				span {
+					color:#46b749;
+				}
+			}
+		}
+		.mail a {
+			font-size: 22px;
+			color:#3a383a;
+		}
+	}
+	.nav {
+		padding-top:111px;
+		margin-left:306px;
+		@extend .cf;
+		a {
+			display: block;
+			float:left;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 18px;
+			color:#3a383a;
+			padding-left:15px;
+			position: relative;
+			margin-right: 50px;
+			&:before {
+				content:"";
+				width: 8px;
+				height:13px;
+				@include icons-sprite(arrow);
+				position: absolute;
+				top:3px;
+				left:0;
+				z-index: 2;
+			}
+			&.active {
+				color:#a62c7a;
+				cursor: default;
+				&:before {
+					@include icons-sprite(arrow-a);
+				}
+			}
+			&:hover {
+				&:before {
+					@include icons-sprite(arrow-a);
+				}
+			}
+		}
+	}
+}

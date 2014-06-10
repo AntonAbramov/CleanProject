@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+	slider();
 
 });
 
@@ -48,4 +48,15 @@ var tabs = function () {
 	}
 }
 
+var slider = function () {
+	if ($('.slider').length) {
+		$('.slider').slidesjs({
+			play: {
+				active: true,
+				auto: true,
+				interval: 4000
+			}
+		});
+	}
+}
 
