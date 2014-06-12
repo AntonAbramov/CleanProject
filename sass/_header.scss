@@ -17,7 +17,7 @@
 		font-weight: bold;
 		color:#3a383a;
 		z-index: 2;
-		font-size: 18px;
+		font-size: 16px;
 		text-transform: uppercase;
 		img {
 			display: block;
@@ -37,13 +37,14 @@
 			margin:0 0 11px;
 			a {
 				color:#3a383a;
+				margin-right: 3px;
 				span {
 					color:#46b749;
 				}
 			}
 		}
 		.mail a {
-			font-size: 22px;
+			font-size: 23px;
 			color:#3a383a;
 		}
 	}
