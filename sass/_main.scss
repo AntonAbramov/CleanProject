@@ -189,6 +189,12 @@ textarea {
 	table {
 		width:100%;
 		td {
+			&:first-child {
+				padding-left: 0;
+			}
+			&:last-child {
+				padding-right: 0;
+			}
 			width:25%;
 			vertical-align: top;
 			padding:0 10px;
@@ -199,6 +205,7 @@ textarea {
 			img {
 				max-width: 100%;
 				display: block;
+				width:100%;
 			}
 		}
 
