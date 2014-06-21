@@ -19,10 +19,76 @@
 	<link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/768.css">
 	<link rel="stylesheet" media="only screen and (min-width: 992px)" href="css/992.css">
 	<!--[if lt IE 9]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://html5shiv.googlecode.com/svn/divunk/html5.js"></script>
 	<![endif]-->
+	<style>
+		#grid {
+			position: relative;
+			margin: 0 auto;
+			width: 1000px;
+		}
+
+		div {
+			padding: 20px;
+		}
+
+		.picture-item {
+			width: 100%;
+			background: #ff9e21;
+			border-bottom: 5px solid green;
+		}
+	</style>
 </head>
 <body>
+<select class="sort-options">
+	<option value="">Default</option>
+	<option value="title">Title</option>
+	<option value="date-created">Date Created</option>
+</select>
+
+<div id="grid" class="row-fluid">
+	<div class="span3 picture-item" data-title="z">
+		Zett
+	</div>
+	<div class="span3 picture-item" data-title="c">
+		Call
+	</div>
+	<div class="span3 picture-item" data-title="a">
+		astr
+	</div>
+	<div class="span3 picture-item" data-title="h">
+		hhhh
+	</div>
+	<div class="span3 picture-item" data-title="b">
+		Baseball
+	</div>
+
+
+
+</div>
+
+
+
+<table id="grid2" class="row-fluid">
+	<tr class="span3 picture-item" data-title="z"><td>
+		Zett</td>
+	</tr>
+	<tr class="span3 picture-item" data-title="c"><td>
+		Call</td>
+	</tr>
+	<tr class="span3 picture-item" data-title="a"><td>
+		astr</td>
+	</tr>
+	<tr class="span3 picture-item" data-title="h"><td>
+		hhhh</td>
+	</tr>
+	<tr class="span3 picture-item" data-title="b"><td>
+		Baseball</td>
+	</tr>
+</table>
 
 </body>
+<script src="js/jquery-2.0.3.min.js"></script>
+<script src="js/shufl.js"></script>
+<script src="js/init.js"></script>
 </html>
